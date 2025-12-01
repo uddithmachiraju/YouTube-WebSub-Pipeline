@@ -17,6 +17,8 @@ fastapi = "*"
 uvicorn = "*"
 tenacity = "*"
 httpx = "*"
+aioboto3 = "*" 
+boto3 = "*"
 
 
 [tool.poetry.group.dev.dependencies]
