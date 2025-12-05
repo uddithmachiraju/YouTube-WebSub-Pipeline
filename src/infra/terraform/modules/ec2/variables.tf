@@ -30,29 +30,24 @@ variable "iam_instance_profile_name" {
 variable "key_name" {
     description     = "Key pair name to access the EC2 instance"
     type            = string
-    default         = null
 }
 
 variable "instance_name" {
     description     = "Name tag for the EC2 instance"
     type            = string
-    default         = "YouTube-WebSub-Pipeline-Instance"
 }
 
 variable "root_volume_size" {
     description     = "Size of the root EBS volume in GB"
     type            = number
-    default         = 20
 }
 
 variable "environment" {
     description     = "Deployment environment (e.g., dev, staging, prod)"
     type            = string
-    default         = "dev"
 }
 
 variable "project_name" {
     description     = "Name of the project"
     type            = string
-    default         = "YouTube-WebSub-Pipeline"
 }

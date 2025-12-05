@@ -7,6 +7,8 @@ resource "aws_instance" "WebSub" {
   iam_instance_profile        = var.iam_instance_profile_name
   key_name                    = var.key_name
 
+  # Attach the IAM role to the instance
+
   root_block_device {
     volume_type             = "gp3"
     volume_size             = var.root_volume_size

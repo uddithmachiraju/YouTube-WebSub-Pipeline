@@ -19,6 +19,7 @@ tenacity = "*"
 httpx = "*"
 aioboto3 = "*" 
 boto3 = "*"
+feedparser = "*"
 
 
 [tool.poetry.group.dev.dependencies]

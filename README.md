@@ -31,7 +31,7 @@
 ```text
 /webhook/          # serverless webhook function (fastapi or minimal)
 /worker/           # worker service that enriches & upserts
-/fastapi/          # FastAPI query API + auth
+/api/              # FastAPI query API + auth
 /agents/           # google-adk agent code (python)
 /ui/               # streamlit UI code
 /infra/            # Terraform configs

@@ -11,7 +11,8 @@
 	"features": {
 		"ghcr.io/devcontainers/features/python:1": {},
 		"ghcr.io/devcontainers-extra/features/poetry:2": {},
-		"ghcr.io/devcontainers-extra/features/terraform-asdf:2": {}
+		"ghcr.io/devcontainers-extra/features/terraform-asdf:2": {},
+		"ghcr.io/devcontainers/features/aws-cli:1": {}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -35,7 +36,8 @@
 				"emilast.logfilehighlighter", 
 				"tamasfe.even-better-toml", 
 				"ms-vscode.makefile-tools", 
-				"charliermarsh.ruff"
+				"charliermarsh.ruff", 
+				"hashicorp.terraform"
 			]
 		}
 	},

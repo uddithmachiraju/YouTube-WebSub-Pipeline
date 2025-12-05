@@ -2,11 +2,24 @@
 variable "aws_region" {
     description     = "AWS region to deploy resources in"
     type            = string
-    default         = "us-east-1"
 }
 
+variable "environment" {
+    description     = "The environment for resource deployment (e.g., dev, staging, prod)"
+    type            = string
+}
+
+variable "project_name" {
+    description     = "The name of the project for resource tagging"
+    type            = string
+}
 
 # Variables for EC2 module
+variable "instance_name" {
+    description     = "Name of the EC2 instance"
+    type            = string
+}
+
 variable "instance_type" {
     description     = "EC2 Instance Type"
     type            = string
@@ -23,13 +36,13 @@ variable "key_name" {
     type            = string
 }
 
-variable "subnet_id" {
-    description     = "Subnet ID for the EC2 instance"
-    type            = string
+variable "root_volume_size" {
+    description     = "Size of the root EBS volume in GB"
+    type            = number
 }
 
-variable "iam_instance_profile_name" {
-    description     = "IAM Instance Profile name to attach to the EC2 instance"
+# Variable for IAM Role name
+variable "iam_role_name" {
+    description     = "IAM Role name to attach to the EC2 instance"
     type            = string
-    default         = null
 }
